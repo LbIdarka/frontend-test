@@ -1,0 +1,39 @@
+@define-mixin font-style $font-size: 16px, $line-height: 21px, $font-weight: 400 {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@define-mixin container $width: 320px, $padding: 0 20px, $margin: 0 auto {
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+
+  @media ($mobail-large-widths) {
+    width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  @media ($tablet-widths) {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1000px;
+    padding: 0 20px;
+  }
+}
+
+
+@define-mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,17 @@
+.payment-card {
+  padding: 35px 0 50px;
+}
+
+.payment-card__title {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @mixin font-style 18px, 24px, 700;
+}
+
+@media ($tablet-widths) {
+
+  .payment-card__title {
+    font-size: 22px;
+  }
+
+}

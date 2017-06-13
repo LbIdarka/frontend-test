@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @mixin font-style 14px, 18px, 700;
+  color: $bg-color;
+  background-image: linear-gradient(to bottom, #a2c500 50%, #86b600);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(to bottom, #ffffff 50%, #a2c500 55%, #86b600 65%, #ffffff 70%);
+  }
+
+  &:active {
+    background-image: linear-gradient(to bottom, #a2c500 50%, #86b600);
+    opacity: 0.5;
+  }
+}
+
+@media ($desktop-widths) {
+
+  .btn {
+    width: 173px;
+    margin-right: auto;
+  }
+
+}

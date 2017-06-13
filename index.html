@@ -2,15 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Тестовое задание | Frontend Developer | Студия Олега Чулакова</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="flex-conteiner">
   <!-- HEADER -->
   <header class="page-header">
 
     <nav class="main-menu">
       <div class="logo">
-        <a href="#" class="logo__link"><span>CHULAKOV</span> RU</a>
+        <a href="#" class="logo__link">
+          <img src="img/logo.png" width="176" height="36" alt="CHULAKOVRU">
+        </a>
       </div>
       <ul class="main-menu__list">
         <li class="main-menu__item">
@@ -36,46 +40,44 @@
   <!-- /HEADER -->
 
   <!-- MAIN -->
-  <main>
+  <main class="page-main">
 
     <header class="page-title">
-      <div class="page-title__wrapper">
-        <h1 class="page-title__caption">Заголовок страницы</h1>
-        <p class="page-title__text">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
-      </div>
+      <h1 class="page-title__caption">Заголовок страницы</h1>
+      <p class="page-title__text">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
     </header>
 
     <!-- PAYMENT -->
-    <div class="payment-wrapper">
+    <div class="page-main__inner">
       <section class="payment">
-          <h2 class="payment__title  payment__title--small">Информация по оплате</h2>
+          <h2 class="payment__title">Информация по оплате:</h2>
           <div class="payment__info">
-            <p class="payment__info-subtitle">Номер счета:</p>
-            <p class="payment__info-value">87123658716587</p>
+            <p class="payment__info-cell  payment__info-cell--subtitle">Номер счета:</p>
+            <p class="payment__info-cell  payment__info-cell--value">87123658716587</p>
           </div>
           <div class="payment__info">
-            <p class="payment__info-subtitle">Сумма платежа:</p>
-            <p class="payment__info-value">100 руб.</p>
+            <p class="payment__info-cell  payment__info-cell--subtitle">Сумма платежа:</p>
+            <p class="payment__info-cell  payment__info-cell--value">100 руб.</p>
           </div>
       </section>
 
       <!-- DATA-CARD -->
       <section class="payment-card">
-        <h2 class="payment-card__title"></h2>
-        <form action="#" method="get" class="data-card">
+        <h2 class="payment-card__title">Данные банковской карты</h2>
+        <form action="#" method="post" class="payment-card__form  data-card">
           <div class="data-card__side  data-card__side--front">
-            <div class="data-card__inner">
-              <fieldset>
-                <legend>Номер карты</legend>
-                <input type="tel" name="number" id="namber-field" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-2" id="namber-2-field" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-3" id="namber-field-3" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-4" id="namber-field-4" minlength="4" maxlength="4" required>
-              </fieldset>
-            </div>
-            <div class="data-card__inner">
-              <fieldset>
-                <legend>Срок действия</legend>
+            <fieldset class="data-card__number">
+              <legend>Номер карты</legend>
+              <div class="data-card__side-inner">
+                <input type="tel" name="number" id="namber-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
+                <input type="tel" name="number-2" id="namber-2-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
+                <input type="tel" name="number-3" id="namber-field-3" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
+                <input type="tel" name="number-4" id="namber-field-4" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
+              </div>
+            </fieldset>
+            <fieldset class="data-card__validity">
+              <legend>Срок действия</legend>
+              <div class="data-card__side-inner">
                 <label for="data-field">Месяц</label> <!-- элемент скрыт -->
                 <select name="month" id="data-field" required>
                   <option value="01">01</option>
@@ -98,22 +100,21 @@
                   <option value="2019">2019</option>
                   <option value="2020">2020</option>
                 </select>
-              </fieldset>
-            </div>
-            <div class="data-card__inner">
-              <fieldset>
-                <legend>Держатель карты</legend>
-                <input type="text" name="name" id="name-field" placeholder="Держатель карты" required>
-              </fieldset>
-            </div>
+              </div>
+            </fieldset>
+            <fieldset class="data-card__name">
+              <legend>Держатель карты</legend> <!-- элемент скрыт -->
+              <input type="text" name="name" id="name-field" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Держатель карты" required>
+            </fieldset>
           </div>
           <div class="data-card__side  data-card__side--back">
-            <div class="data-card__inner">
-              <fieldset>
+              <fieldset  class="data-card__cvv">
                 <legend>Код CVV2 / CVC2</legend>
-                <input type="tel" name="cvv" id="cvv-field" minlength="3" maxlength="3" required>
+                <div class="data-card__side-inner  data-card__side-inner--back  data-card__side-inner--icon">
+                  <label for="cvv-field">Введите код CVV2</label> <!-- элемент скрыт -->
+                  <input type="tel" name="cvv" id="cvv-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="3" maxlength="3" required>
+                </div>
               </fieldset>
-            </div>
           </div>
           <button type="submit" class="btn">Оплатить</button>
         </form>

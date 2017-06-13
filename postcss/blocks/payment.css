@@ -1,0 +1,42 @@
+.payment {
+  display: table;
+  border-spacing: 0 10px;
+}
+
+.payment__title {
+  display: table-caption;
+  margin: 0;
+  padding: 25px 0;
+  @mixin font-style 14px, 120%;
+  color: $label-color;
+}
+
+.payment__info {
+  display: table-row;
+}
+
+.payment__info-cell {
+  display: table-cell;
+  font-size: 14px;
+
+  &--subtitle {
+  width: 160px;
+  color: $label-color;
+  }
+
+  &--value {
+    color: $item-color;
+  }
+}
+
+@media ($tablet-widths) {
+
+  .payment__title {
+    font: inherit;
+  }
+
+.payment__info-cell {
+  font: inherit;
+}
+
+}

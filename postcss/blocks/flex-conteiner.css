@@ -1,0 +1,10 @@
+ @media ($desktop-widths) {
+
+  .flex-conteiner {
+    display: flex;
+    @mixin container;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+
+ }
