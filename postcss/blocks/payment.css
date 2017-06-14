@@ -35,8 +35,8 @@
     font: inherit;
   }
 
-.payment__info-cell {
-  font: inherit;
-}
+  .payment__info-cell {
+    font: inherit;
+  }
 
 }

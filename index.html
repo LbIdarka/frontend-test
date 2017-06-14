@@ -69,21 +69,22 @@
             <fieldset class="data-card__number">
               <legend>Номер карты</legend>
               <div class="data-card__side-inner">
-                <input type="tel" name="number" id="namber-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-2" id="namber-2-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-3" id="namber-field-3" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
-                <input type="tel" name="number-4" id="namber-field-4" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="4" maxlength="4" required>
+                <input class="data-card__number-field" type="tel" name="number-1" id="namber-field" autocomplete="off" minlength="4" maxlength="4">
+                <input class="data-card__number-field" type="tel" name="number-2" id="namber-2-field" autocomplete="off" minlength="4" maxlength="4">
+                <input class="data-card__number-field" type="tel" name="number-3" id="namber-field-3" autocomplete="off" minlength="4" maxlength="4">
+                <input class="data-card__number-field" type="tel" name="number-4" id="namber-field-4" autocomplete="off" minlength="4" maxlength="4">
               </div>
             </fieldset>
             <fieldset class="data-card__validity">
               <legend>Срок действия</legend>
               <div class="data-card__side-inner">
                 <label for="data-field">Месяц</label> <!-- элемент скрыт -->
-                <select name="month" id="data-field" required>
+                <select class="data-card__select" name="month" id="data-field">
+                  <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>04</option>
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
-                  <option value="04" selected>04</option>
+                  <option value="04">04</option>
                   <option value="05">05</option>
                   <option value="06">06</option>
                   <option value="07">07</option>
@@ -94,9 +95,10 @@
                   <option value="12">12</option>
                 </select>
                 <label for="year-field">Год</label> <!-- элемент скрыт -->
-                <select name="year" id="year-field" required>
+                <select class="data-card__select" name="year" id="year-field">
+                  <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>2018</option>
                   <option value="2017">2017</option>
-                  <option value="2018" selected>2018</option>
+                  <option value="2018">2018</option>
                   <option value="2019">2019</option>
                   <option value="2020">2020</option>
                 </select>
@@ -104,15 +106,15 @@
             </fieldset>
             <fieldset class="data-card__name">
               <legend>Держатель карты</legend> <!-- элемент скрыт -->
-              <input type="text" name="name" id="name-field" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Держатель карты" required>
+              <input class="data-card__name-field" type="text" name="name" id="name-field" autocomplete="off" minlength="4" placeholder="Держатель карты">
             </fieldset>
           </div>
           <div class="data-card__side  data-card__side--back">
-              <fieldset  class="data-card__cvv">
+              <fieldset class="data-card__cvv">
                 <legend>Код CVV2 / CVC2</legend>
                 <div class="data-card__side-inner  data-card__side-inner--back  data-card__side-inner--icon">
                   <label for="cvv-field">Введите код CVV2</label> <!-- элемент скрыт -->
-                  <input type="tel" name="cvv" id="cvv-field" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="3" maxlength="3" required>
+                  <input class="data-card__cvv-field" type="tel" name="cvv" id="cvv-field" autocomplete="off" minlength="3" maxlength="3">
                 </div>
               </fieldset>
           </div>
@@ -135,6 +137,6 @@
 
   </main>
   <!-- /MAIN -->
-
+  <script src="js/script.js"></script>
 </body>
 </html>

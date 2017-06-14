@@ -1,21 +1,12 @@
 /* цвет body backgraund */
-
 /* цвет main-menu */
-
 /* цвет формы */
-
 /* основной цвет */
-
 /* цвет подписей */
-
 /* цвет подписей */
-
 /* цвет используется в состоянии hover*/
-
 /* цвет используется в состоянии active main-menu*/
-
 /* цвет шрифта используется в user-menu и состоянии active main-menu*/
-
 /* рамка для input */
 
 @font-face {
@@ -43,7 +34,7 @@ body {
 
     min-width: 320px;
 
-    margin: 0;
+    margin: 0 auto;
 
     font-family: "Arial", "Helvetica", sans-serif;
 
@@ -109,8 +100,6 @@ img {
 
     text-transform: uppercase
 }
-
-.main-menu__item a[href] {}
 
 .main-menu__item a[href]:hover, .main-menu__item a[href]:focus {
 
@@ -322,9 +311,7 @@ img {
 
         display: flex;
 
-        width: 320px;
-
-        padding: 0 20px;
+        width: 960px;
 
         margin: 0 auto;
 
@@ -333,35 +320,6 @@ img {
         -ms-flex-negative: 0;
 
             flex-shrink: 0
-    }
-}
-@media (min-width: 1000px) and (min-width: 480px) {
-
-    .flex-conteiner {
-
-        width: 480px;
-
-        padding: 0 20px;
-
-        margin: 0 auto
-    }
-}
-@media (min-width: 1000px) and (min-width: 768px) {
-
-    .flex-conteiner {
-
-        width: 768px;
-
-        padding: 0 40px
-    }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-
-    .flex-conteiner {
-
-        width: 1000px;
-
-        padding: 0 20px
     }
 }
 @media (min-width: 1000px) {
@@ -379,9 +337,7 @@ img {
 }
 .page-main__inner {
 
-    width: 320px;
-
-    padding: 0 20px;
+    width: 280px;
 
     margin: 0 auto
 }
@@ -389,9 +345,7 @@ img {
 
     .page-main__inner {
 
-        width: 480px;
-
-        padding: 0 20px;
+        width: 440px;
 
         margin: 0 auto
     }
@@ -400,18 +354,9 @@ img {
 
     .page-main__inner {
 
-        width: 768px;
+        width: 708px;
 
-        padding: 0 40px
-    }
-}
-@media (min-width: 1000px) {
-
-    .page-main__inner {
-
-        width: 1000px;
-
-        padding: 0 20px
+        margin: 0 auto
     }
 }
 @media (min-width: 1000px) {
@@ -530,40 +475,9 @@ img {
 }
 .notice__wrapper {
 
-    width: 320px;
-
-    padding: 0 20px;
+    width: 280px;
 
     margin: 0 auto
-}
-@media (min-width: 480px) {
-
-    .notice__wrapper {
-
-        width: 480px;
-
-        padding: 0 20px;
-
-        margin: 0 auto
-    }
-}
-@media (min-width: 768px) {
-
-    .notice__wrapper {
-
-        width: 768px;
-
-        padding: 0 40px
-    }
-}
-@media (min-width: 1000px) {
-
-    .notice__wrapper {
-
-        width: 1000px;
-
-        padding: 0 20px
-    }
 }
 .notice__title {
 
@@ -601,12 +515,26 @@ img {
 
         font-size: 9px
     }
+
+    .notice__wrapper {
+
+        width: 440px;
+
+        margin: 0 auto
+    }
 }
 @media (min-width: 768px) {
 
     .notice {
 
         font-size: 12px
+    }
+
+    .notice__wrapper {
+
+        width: 708px;
+
+        margin: 0 auto
     }
 }
 @media (min-width: 1000px) {
@@ -765,7 +693,8 @@ img {
 
     padding-right: 25px
 }
-.data-card__number input {
+/*==== DATA-CARD__NUMBER ====*/
+.data-card__number-field {
 
     width: 23%;
 
@@ -783,14 +712,17 @@ img {
 
     border: 1px solid #e4e9ee
 }
-.data-card__number input:last-child {
+.data-card__number-field:last-child {
 
     margin-right: 0
 }
-.data-card__number input:hover {
+.data-card__number-field:hover, .data-card__number-field:focus {
 
-    border-color: #373c43
+    border-color: #e4e9ee;
+
+    box-shadow: 0px 0px 3px #373c43
 }
+/*==== DATA-CARD__VALIDITY ====*/
 .data-card__validity label {
 
     position: absolute;
@@ -809,7 +741,7 @@ img {
 
     overflow: hidden
 }
-.data-card__validity select {
+.data-card__select {
 
     width: 25%;
 
@@ -827,16 +759,23 @@ img {
 
     border: 1px solid #e4e9ee
 }
-.data-card__validity select:last-child {
+.data-card__select:last-child {
 
     width: 32%;
 
     margin-right: 0
 }
-.data-card__validity select:hover {
+.data-card__select:hover, .data-card__select:focus {
 
-    border-color: #373c43
+    border-color: #e4e9ee;
+
+    box-shadow: 0px 0px 3px #373c43
 }
+.data-card__select-item--hidden {
+
+    display: none
+}
+/*==== DATA-CARD__NAME ====*/
 .data-card__name legend {
 
     position: absolute;
@@ -855,7 +794,7 @@ img {
 
     overflow: hidden
 }
-.data-card__name input {
+.data-card__name-field {
 
     width: 100%;
 
@@ -869,22 +808,25 @@ img {
 
     border: 1px solid #e4e9ee
 }
-.data-card__name input:hover {
+.data-card__name-field:hover, .data-card__name-field:focus {
 
-    border-color: #373c43
-}
-.data-card__name input::-webkit-input-placeholder {
+    border-color: #e4e9ee;
 
-    color: #bec6cf
+    box-shadow: 0px 0px 3px #373c43
 }
-.data-card__name input:-ms-input-placeholder {
+.data-card__name-field::-webkit-input-placeholder {
 
     color: #bec6cf
 }
-.data-card__name input::placeholder {
+.data-card__name-field:-ms-input-placeholder {
 
     color: #bec6cf
 }
+.data-card__name-field::placeholder {
+
+    color: #bec6cf
+}
+/*==== DATA-CARD__CVV ====*/
 .data-card__cvv {
 
     width: 100%
@@ -911,7 +853,7 @@ img {
 
     padding-top: 60px;
 
-    text-align: right
+    margin-left: 131px
 }
 .data-card__side-inner {}
 .data-card__side-inner--back {
@@ -972,7 +914,7 @@ img {
 
     overflow: hidden
 }
-.data-card__cvv input {
+.data-card__cvv-field {
 
     width: 46%;
 
@@ -988,9 +930,19 @@ img {
 
     border: 1px solid #e4e9ee
 }
-.data-card__cvv input:hover {
+.data-card__cvv-field:hover, .data-card__cvv-field:focus {
 
-    border-color: #373c43
+    border-color: #e4e9ee;
+
+    box-shadow: 0px 0px 3px #373c43
+}
+.data-card__invalid {
+
+    border-color: red;
+
+    outline: none;
+
+    box-shadow: none
 }
 @media (min-width: 480px) {
 
@@ -1047,8 +999,6 @@ img {
         font-weight: 400
     }
 
-    .data-card__side-inner {}
-
     .data-card__side-inner--back {
 
         padding-bottom: 75px
@@ -1066,6 +1016,11 @@ img {
     .data-card__cvv::before {
 
         height: 43px
+    }
+
+    .data-card__cvv legend {
+
+        margin-left: 170px
     }
 }
 @media (min-width: 1000px) {
@@ -1095,6 +1050,8 @@ img {
 
     color: #ffffff;
 
+    background-color: transparent;
+
     background-image: linear-gradient(to bottom, #a2c500 50%, #86b600);
 
     border: none;
@@ -1105,7 +1062,7 @@ img {
 }
 .btn:hover, .btn:focus {
 
-    background-image: linear-gradient(to bottom, #ffffff 50%, #a2c500 55%, #86b600 65%, #ffffff 70%)
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #a2c500 55%, #86b600 65%, rgba(255, 255, 255, 0) 70%)
 }
 .btn:active {
 

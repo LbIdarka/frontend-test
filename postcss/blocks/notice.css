@@ -31,12 +31,20 @@
     font-size: 9px;
   }
 
+  .notice__wrapper {
+    @mixin container 440px;
+  }
+
 }
 
 @media ($tablet-widths) {
 
   .notice {
     font-size: 12px;
+  }
+
+  .notice__wrapper {
+    @mixin container 708px;
   }
 
 }
