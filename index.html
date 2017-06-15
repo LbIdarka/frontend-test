@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Тестовое задание | Frontend Developer | Студия Олега Чулакова</title>
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body class="flex-conteiner">
-  <!-- HEADER -->
-  <header class="page-header">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Тестовое задание | Frontend Developer | Студия Олега Чулакова</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="flex-conteiner">
+    <!-- HEADER -->
+    <header class="page-header">
 
-    <nav class="main-menu">
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <img src="img/logo.png" width="176" height="36" alt="CHULAKOVRU">
-        </a>
-      </div>
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a href="#">Первая ссылка</a>
-        </li>
-        <li class="main-menu__item  main-menu__item--active">
-          <a>Вторая ссылка (активная)</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">Третья ссылка</a>
-        </li>
-      </ul>
-      <ul class="main-menu__user-items  user-menu">
-        <li class="user-menu__item">
-          <a href="#">Личный кабинет</a>
-        </li>
-        <li class="user-menu__item">
-          <a href="#">Выйти</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- /HEADER -->
-
-  <!-- MAIN -->
-  <main class="page-main">
-
-    <header class="page-title">
-      <h1 class="page-title__caption">Заголовок страницы</h1>
-      <p class="page-title__text">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+      <nav class="main-menu">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.png" width="176" height="36" alt="CHULAKOVRU">
+          </a>
+        </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a href="#">Первая ссылка</a>
+          </li>
+          <li class="main-menu__item  main-menu__item--active">
+            <a>Вторая ссылка (активная)</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Третья ссылка</a>
+          </li>
+        </ul>
+        <ul class="main-menu__user-items  user-menu">
+          <li class="user-menu__item">
+            <a href="#">Личный кабинет</a>
+          </li>
+          <li class="user-menu__item">
+            <a href="#">Выйти</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <!-- /HEADER -->
 
-    <!-- PAYMENT -->
-    <div class="page-main__inner">
-      <section class="payment">
+    <!-- MAIN -->
+    <main class="page-main">
+
+      <header class="page-title">
+        <h1 class="page-title__caption">Заголовок страницы</h1>
+        <p class="page-title__text">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+      </header>
+
+      <!-- PAYMENT -->
+      <div class="page-main__inner">
+        <section class="payment">
           <h2 class="payment__title">Информация по оплате:</h2>
           <div class="payment__info">
             <p class="payment__info-cell  payment__info-cell--subtitle">Номер счета:</p>
@@ -59,57 +59,63 @@
             <p class="payment__info-cell  payment__info-cell--subtitle">Сумма платежа:</p>
             <p class="payment__info-cell  payment__info-cell--value">100 руб.</p>
           </div>
-      </section>
+        </section>
 
-      <!-- DATA-CARD -->
-      <section class="payment-card">
-        <h2 class="payment-card__title">Данные банковской карты</h2>
-        <form action="#" method="post" class="payment-card__form  data-card">
-          <div class="data-card__side  data-card__side--front">
-            <fieldset class="data-card__number">
-              <legend>Номер карты</legend>
-              <div class="data-card__side-inner">
-                <input class="data-card__number-field" type="tel" name="number-1" id="namber-field" autocomplete="off" minlength="4" maxlength="4">
-                <input class="data-card__number-field" type="tel" name="number-2" id="namber-2-field" autocomplete="off" minlength="4" maxlength="4">
-                <input class="data-card__number-field" type="tel" name="number-3" id="namber-field-3" autocomplete="off" minlength="4" maxlength="4">
-                <input class="data-card__number-field" type="tel" name="number-4" id="namber-field-4" autocomplete="off" minlength="4" maxlength="4">
-              </div>
-            </fieldset>
-            <fieldset class="data-card__validity">
-              <legend>Срок действия</legend>
-              <div class="data-card__side-inner">
-                <label for="data-field">Месяц</label> <!-- элемент скрыт -->
-                <select class="data-card__select" name="month" id="data-field">
-                  <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>04</option>
-                  <option value="01">01</option>
-                  <option value="02">02</option>
-                  <option value="03">03</option>
-                  <option value="04">04</option>
-                  <option value="05">05</option>
-                  <option value="06">06</option>
-                  <option value="07">07</option>
-                  <option value="08">08</option>
-                  <option value="09">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-                <label for="year-field">Год</label> <!-- элемент скрыт -->
-                <select class="data-card__select" name="year" id="year-field">
-                  <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>2018</option>
-                  <option value="2017">2017</option>
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset class="data-card__name">
-              <legend>Держатель карты</legend> <!-- элемент скрыт -->
-              <input class="data-card__name-field" type="text" name="name" id="name-field" autocomplete="off" minlength="4" placeholder="Держатель карты">
-            </fieldset>
-          </div>
-          <div class="data-card__side  data-card__side--back">
+        <!-- DATA-CARD -->
+        <section class="payment-card">
+          <h2 class="payment-card__title">Данные банковской карты</h2>
+          <form action="#" method="post" class="payment-card__form  data-card">
+
+            <!-- Лицевая сторона карты -->
+            <div class="data-card__side  data-card__side--front">
+              <fieldset class="data-card__number">
+                <legend>Номер карты</legend>
+                <div class="data-card__side-inner">
+                  <input class="data-card__number-field" type="tel" name="number-1" id="namber-field" autocomplete="off" minlength="4" maxlength="4" autofocus>
+                  <input class="data-card__number-field" type="tel" name="number-2" id="namber-2-field" autocomplete="off" minlength="4" maxlength="4">
+                  <input class="data-card__number-field" type="tel" name="number-3" id="namber-field-3" autocomplete="off" minlength="4" maxlength="4">
+                  <input class="data-card__number-field" type="tel" name="number-4" id="namber-field-4" autocomplete="off" minlength="4" maxlength="4">
+                </div>
+              </fieldset>
+
+              <fieldset class="data-card__validity">
+                <legend>Срок действия</legend>
+                <div class="data-card__side-inner">
+                  <label for="data-field">Месяц</label> <!-- элемент скрыт -->
+                  <select class="data-card__select" name="month" id="data-field">
+                    <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>04</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <label for="year-field">Год</label> <!-- элемент скрыт -->
+                  <select class="data-card__select" name="year" id="year-field">
+                    <option class="data-card__select-item  data-card__select-item--hidden" value="" disabled selected>2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="data-card__name">
+                <legend>Держатель карты</legend> <!-- элемент скрыт -->
+                <input class="data-card__name-field" type="text" name="name" id="name-field" autocomplete="off" minlength="4" pattern="[A-Z]{4,}" placeholder="Держатель карты">
+              </fieldset>
+            </div>
+
+            <!-- Обратная сторона карты -->
+            <div class="data-card__side  data-card__side--back">
               <fieldset class="data-card__cvv">
                 <legend>Код CVV2 / CVC2</legend>
                 <div class="data-card__side-inner  data-card__side-inner--back  data-card__side-inner--icon">
@@ -117,26 +123,28 @@
                   <input class="data-card__cvv-field" type="tel" name="cvv" id="cvv-field" autocomplete="off" minlength="3" maxlength="3">
                 </div>
               </fieldset>
-          </div>
-          <button type="submit" class="btn">Оплатить</button>
-        </form>
-      </section>
-      <!-- /DATA-CARD -->
-    </div>
-    <!-- /PAYMENT -->
-
-    <section class="notice">
-      <div class="notice__wrapper">
-        <h2 class="notice__title">Условия оплаты</h2> <!-- элемент скрыт -->
-        <p class="notice__text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
-        <p class="notice__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
-        <p class="notice__text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
-        <p class="notice__text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+            </div>
+            <button type="submit" class="btn">Оплатить</button>
+          </form>
+        </section>
+        <!-- /DATA-CARD -->
       </div>
-    </section>
+      <!-- /PAYMENT -->
 
-  </main>
-  <!-- /MAIN -->
-  <script src="js/script.js"></script>
-</body>
+      <section class="notice">
+        <div class="notice__wrapper">
+          <h2 class="notice__title">Условия оплаты</h2> <!-- элемент скрыт -->
+          <p class="notice__text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+          <p class="notice__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+          <p class="notice__text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+          <p class="notice__text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+        </div>
+      </section>
+
+    </main>
+    <!-- /MAIN -->
+
+    <script src="js/script.js"></script>
+
+  </body>
 </html>

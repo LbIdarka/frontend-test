@@ -98,6 +98,7 @@
   padding: 7px;
   @mixin font-style 14px, 120%;
   border: $input-border;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -107,6 +108,7 @@
 
   &::placeholder {
     color: #bec6cf;
+    text-transform: none;
   }
 }
 
@@ -177,7 +179,7 @@
 
 }
 
-.data-card__invalid {
+.data-card--invalid {
   border-color: red;
   outline: none;
   box-shadow: none;

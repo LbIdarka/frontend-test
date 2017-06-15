@@ -9,47 +9,46 @@ var year = card.querySelector("[name=year]");
 var introduce = card.querySelector("[name=name]");
 var cvv = card.querySelector("[name=cvv]");
 
+// проверка отправки формы на пустые строки
 form.addEventListener("submit", function(event) {
-    if (!number1.value ||!number1.length < 4 ||!number1.length > 4) {
-      event.preventDefault();
-      number1.classList.add("data-card__invalid");
-    }
+  if (!number1.value) {
+    event.preventDefault();
+    number1.classList.add("data-card--invalid");
+  }
 
-    if (!number2.value || !number2.length < 4 || !number2.length > 4) {
-      event.preventDefault();
-      number2.classList.add("data-card__invalid");
-    }
+  if (!number2.value) {
+    event.preventDefault();
+    number2.classList.add("data-card--invalid");
+  }
 
-    if (!number3.value || !number3.length < 4 || !number3.length > 4) {
-      event.preventDefault();
-      number3.classList.add("data-card__invalid");
-    }
+  if (!number3.value) {
+    event.preventDefault();
+    number3.classList.add("data-card--invalid");
+  }
 
-    if (!number4.value || !number4.length < 4 || !number3.length > 4) {
-      event.preventDefault();
-      number4.classList.add("data-card__invalid");
-    }
+  if (!number4.value) {
+    event.preventDefault();
+    number4.classList.add("data-card--invalid");
+  }
 
-    if (!month.value) {
-      event.preventDefault();
-      month.classList.add("data-card__invalid");
-    }
+  if (!month.value) {
+    event.preventDefault();
+    month.classList.add("data-card--invalid");
+  }
 
-    if (!year.value) {
-      event.preventDefault();
-      year.classList.add("data-card__invalid");
-    }
+  if (!year.value) {
+    event.preventDefault();
+    year.classList.add("data-card--invalid");
+  }
 
-    if (!introduce.value) {
-      event.preventDefault();
-      introduce.classList.add("data-card__invalid");
-    }
+  if (!introduce.value) {
+    event.preventDefault();
+    introduce.classList.add("data-card--invalid");
+  }
 
-    if (!cvv.value || !cvv.length < 3 || !cvv.length > 3) {
-      event.preventDefault();
-      cvv.classList.add("data-card__invalid");
-    }
+  if (!cvv.value) {
+    event.preventDefault();
+    cvv.classList.add("data-card--invalid");
+  }
 
-  });
-
-
+});
