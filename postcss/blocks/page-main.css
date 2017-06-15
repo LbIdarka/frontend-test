@@ -1,0 +1,39 @@
+.page-main {
+  color: $item-color;
+  background-color: $bg-form;
+}
+
+.page-main__inner {
+  @mixin container;
+}
+
+@media ($mobail-large-widths) {
+
+  .page-main__inner {
+    @mixin container 440px;
+  }
+
+}
+
+@media ($tablet-widths) {
+
+  .page-main__inner {
+    @mixin container 708px;
+  }
+
+}
+
+@media ($desktop-widths) {
+
+  .page-main {
+    width: 640px;
+    flex-grow: 1;
+  }
+
+  .page-main__inner {
+    width: 640px;
+    padding: 0 45px 0 30px;
+  }
+
+}
+

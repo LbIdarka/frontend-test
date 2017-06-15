@@ -1,0 +1,15 @@
+$mobail-large-widths: (min-width: 480px);
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1000px);
+
+$body-bg: #101114; /* цвет body backgraund */
+$bg-menu: #1f2229; /* цвет main-menu */
+$bg-form: #f7f8f8; /* цвет формы */
+$bg-color: #ffffff; /* основной цвет */
+$item-color: #373c43; /* цвет подписей */
+$label-color: #8494ab; /* цвет подписей */
+$color-hover: color($bg-color a(30%)); /* цвет используется в состоянии hover*/
+$bg-menu-active: #2a2d37; /* цвет используется в состоянии active main-menu*/
+$color-active: #808592; /* цвет шрифта используется в user-menu и состоянии active main-menu*/
+
+$input-border: 1px solid #e4e9ee; /* рамка для input */

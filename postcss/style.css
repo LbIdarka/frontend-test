@@ -1,0 +1,20 @@
+@import "global/normalize.css";
+
+@import "variables.css";
+@import "mixins.css";
+
+@import "global/fonts.css";
+@import "global/scaffolding.css";
+
+@import "blocks/main-menu.css";
+@import "blocks/logo.css";
+@import "blocks/user-menu.css";
+@import "blocks/flex-conteiner.css";
+@import "blocks/page-header.css";
+@import "blocks/page-main.css";
+@import "blocks/page-title.css";
+@import "blocks/notice.css";
+@import "blocks/payment.css";
+@import "blocks/payment-card.css";
+@import "blocks/data-card.css";
+@import "blocks/btn.css";

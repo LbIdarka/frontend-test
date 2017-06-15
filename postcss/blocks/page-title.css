@@ -1,0 +1,62 @@
+.page-title {
+  display: none;
+}
+
+@media ($mobail-large-widths) {
+
+  .page-title {
+    display: block;
+    padding: 30px;
+    color: #193945;
+    background-color: #00aeef;
+  }
+
+  .page-title__caption {
+    margin: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    @mixin font-style 24px, 120%, 700;
+    text-align: center;
+  }
+
+  .page-title__text {
+    display: none;
+  }
+
+}
+
+@media ($tablet-widths) {
+
+  .page-title__caption {
+    font-size: 28px;
+  }
+
+  .page-title__text {
+    display: block;
+    margin: 0;
+    margin-top: 12px;
+    padding-right: 263px;
+    font-size: 14px;
+  }
+
+}
+
+@media ($desktop-widths) {
+
+  .page-title {
+    padding-top: 55px;
+  }
+
+  .page-title__caption {
+    font-size: 35px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .page-title__text {
+    margin-top: 15px;
+    padding-right: 135px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+}

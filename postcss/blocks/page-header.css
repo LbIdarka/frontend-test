@@ -1,0 +1,6 @@
+@media ($desktop-widths) {
+
+  .page-header {
+    width: 320px;
+  }
+}

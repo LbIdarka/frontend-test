@@ -1,0 +1,257 @@
+.data-card {
+  margin-top: 17px;
+  max-width: 565px;
+}
+
+.data-card__side {
+  position: relative;
+  width: 280px;
+  margin-bottom: 15px;
+  padding: 20px 15px 15px;
+  background-color: $bg-form;
+  border: 1px solid #e4e9ee;
+  border-radius: 10px;
+}
+
+.data-card__side fieldset {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  border: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.data-card__side legend {
+  margin-bottom: 5px;
+  @mixin font-style 14px, 120%;
+  color: $label-color;
+}
+
+.data-card__side-inner {
+  display: flex;
+  margin-right: auto;
+  padding-right: 25px;
+}
+
+/*==== DATA-CARD__NUMBER ====*/
+
+.data-card__number-field {
+  width: 23%;
+  margin-right: auto;
+  padding: 7px;
+  @mixin font-style 14px, 120%;
+  text-align: center;
+  border: $input-border;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #e4e9ee;
+    box-shadow: 0px 0px 3px $item-color;
+  }
+}
+
+/*==== DATA-CARD__VALIDITY ====*/
+
+.data-card__validity label {
+  @mixin visually-hidden;
+}
+
+.data-card__select {
+  width: 25%;
+  margin-right: 10px;
+  padding: 7px;
+  @mixin font-style 14px, 120%;
+  text-align: center;
+  border: $input-border;
+
+  &:last-child {
+    width: 32%;
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #e4e9ee;
+    box-shadow: 0px 0px 3px $item-color;
+  }
+}
+
+.data-card__select-item--hidden {
+  display: none;
+  }
+
+/*==== DATA-CARD__NAME ====*/
+
+.data-card__name legend {
+  @mixin visually-hidden;
+}
+
+.data-card__name-field {
+  width: 100%;
+  padding: 7px;
+  @mixin font-style 14px, 120%;
+  border: $input-border;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    border-color: #e4e9ee;
+    box-shadow: 0px 0px 3px $item-color;
+  }
+
+  &::placeholder {
+    color: #bec6cf;
+    text-transform: none;
+  }
+}
+
+/*==== DATA-CARD__CVV ====*/
+
+.data-card__cvv {
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #e4e9ee;
+    border: $input-border;
+  }
+}
+
+.data-card__cvv legend {
+  padding-top: 60px;
+  margin-left: 131px;
+}
+
+.data-card__side-inner {
+
+  &--back {
+    padding: 0;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &--icon::before {
+    content: "?";
+    position: absolute;
+    top: 106px;
+    right: 25px;
+    width: 23px;
+    height: 23px;
+    color: #bec6cf;
+    text-align: center;
+    border: $input-border;
+    border-color: #bec6cf;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+}
+
+.data-card__cvv label {
+  @mixin visually-hidden;
+}
+
+.data-card__cvv-field {
+  width: 46%;
+  padding: 7px;
+  @mixin font-style 14px, 120%;
+  text-align: center;
+  border: $input-border;
+
+  &:hover,
+  &:focus {
+    border-color: #e4e9ee;
+    box-shadow: 0px 0px 3px $item-color;
+  }
+
+}
+
+.data-card--invalid {
+  border-color: red;
+  outline: none;
+  box-shadow: none;
+}
+
+
+@media ($mobail-large-widths) {
+
+  .data-card__side {
+
+    &--front {
+      z-index: 1;
+    }
+
+    &--back {
+      margin-top: -195px;
+      margin-left: auto;
+    }
+  }
+
+}
+
+@media ($tablet-widths) {
+
+  .data-card {
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+
+  .data-card__side {
+    width: 350px;
+
+     &--back {
+      margin-top: -231px;
+    }
+  }
+
+  .data-card__number input,
+  .data-card__validity select,
+  .data-card__name input,
+  .data-card__cvv input {
+    padding: 10px;
+    @mixin font-style;
+  }
+
+  .data-card__side legend {
+    @mixin font-style;
+  }
+
+  .data-card__side-inner--back {
+    padding-bottom: 75px;
+  }
+
+  .data-card__side-inner--icon::before {
+    top: 115px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .data-card__cvv::before {
+    height: 43px;
+  }
+
+  .data-card__cvv legend {
+    margin-left: 170px;
+  }
+
+}
+
+@media ($desktop-widths)  {
+
+  .data-card {
+    margin: 17px 0;
+  }
+}
